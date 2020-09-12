@@ -1,0 +1,13 @@
+#ingredients{
+    display: flex;
+    list-style: none;
+}
+#ingredients li{
+    margin-right: 15px;
+    border: 1px solid #cccccc;
+    padding: 5px 10px;
+}
+
+#ingredients li:last-child{
+    margin-right: 0;
+}

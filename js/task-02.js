@@ -1,2 +1,30 @@
-//https://www.youtube.com/watch?v=-qfbP5mM9MM&feature=youtu.be
-//https://github.com/goitacademy/javascript-homework/tree/master/homework-07
+/*
+В HTML есть пустой список ul#ingredients.
+    <ul id="ingredients"></ul>
+
+В JS есть массив строк.
+*/
+const ingredients = [
+    'Картошка',
+    'Грибы',
+    'Чеснок',
+    'Помидоры',
+    'Зелень',
+    'Приправы',
+];
+/*
+Напиши скрипт, который для каждого элемента массива ingredients создаст отдельный li,
+после чего вставит все li за одну операцию в список ul.ingredients.
+Для создания DOM-узлов используй document.createElement().
+*/
+
+function makeList (array, selector){
+    const ul = document.querySelector(selector);
+    array.forEach(arrTextElement => {
+        const li = document.createElement("li");
+        li.textContent = arrTextElement
+        ul.appendChild(li);
+    })
+}
+
+makeList(ingredients, '#ingredients')

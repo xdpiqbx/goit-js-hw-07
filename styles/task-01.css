@@ -1,0 +1,7 @@
+#categories{
+    display: flex;
+    list-style: none;
+}
+#categories li:not(:last-child){
+    margin-right: 25px;
+}

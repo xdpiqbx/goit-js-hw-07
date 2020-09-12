@@ -1,0 +1,39 @@
+#gallery{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 220px;
+    justify-content: center;
+}
+
+#gallery .gallery-list-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+    position: relative;
+    width: 25vw;
+    height: auto;
+}
+
+#gallery .gallery-list-item:last-child{
+    margin-right: 0;
+}
+
+#gallery .gallery-list-item-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    transition-duration: .25s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+#gallery .gallery-list-item-image:hover{
+    position: absolute;
+    z-index: 1;
+    font-size: 2em;
+    width: 30vw;
+    height: auto;
+}
