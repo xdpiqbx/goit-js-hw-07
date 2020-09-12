@@ -3,58 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/task-01.css">
     <link rel="stylesheet" href="./styles/task-02.css">
     <link rel="stylesheet" href="./styles/task-03.css">
+    <link rel="stylesheet" href="./styles/task-04.css">
+    <link rel="stylesheet" href="./styles/task-05.css">
+    <link rel="stylesheet" href="./styles/task-06.css">
+    <link rel="stylesheet" href="./styles/task-07.css">
+    <link rel="stylesheet" href="./styles/task-08.css">
     <title>Document</title>
 </head>
 <body>
+  <div class="container">
     <a href="https://github.com/xdpiqbx/goit-js-hw-07" target="blank">
         <h1>github.com/xdpiqbx/goit-js-hw-07</h1>
     </a>
     <a href="https://github.com/goitacademy/javascript-homework/tree/master/homework-07" target="blank">
         <h2>goitacademy / javascript-homework-7</h2>
     </a>
-<hr>
+    <hr>
     <ul id="categories">
-        <li class="item">
-          <h2>Животные</h2>
-          <ul>
-            <li>Кот</li>
-            <li>Хомяк</li>
-            <li>Лошадь</li>
-            <li>Попугай</li>
-          </ul>
-        </li>
-        <li class="item">
-          <h2>Продукты</h2>
-          <ul>
-            <li>Хлеб</li>
-            <li>Петрушка</li>
-            <li>Творог</li>
-          </ul>
-        </li>
-        <li class="item">
-          <h2>Технологии</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node</li>
-          </ul>
-        </li>
-      </ul>
-<hr>
-<ul id="ingredients"></ul>
-<hr>
-<ul id="gallery"></ul>
-<hr>
-<div id="counter">
-  <button type="button" data-action="decrement">-1</button>
-  <span id="value">0</span>
-  <button type="button" data-action="increment">+1</button>
-</div>
+      <li class="item">
+        <h2>Животные</h2>
+        <ul>
+          <li>Кот</li>
+          <li>Хомяк</li>
+          <li>Лошадь</li>
+          <li>Попугай</li>
+        </ul>
+      </li>
+      <li class="item">
+        <h2>Продукты</h2>
+        <ul>
+          <li>Хлеб</li>
+          <li>Петрушка</li>
+          <li>Творог</li>
+        </ul>
+      </li>
+      <li class="item">
+        <h2>Технологии</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node</li>
+        </ul>
+      </li>
+    </ul>
+    <hr>
+    <ul id="ingredients"></ul>
+    <hr>
+    <ul id="gallery"></ul>
+    <hr>
+    <div id="counter">
+      <button type="button" data-action="decrement">-1</button>
+      <span id="value">0</span>
+      <button type="button" data-action="increment">+1</button>
+    </div>
+    <hr>
+    <input type="text" placeholder="Ваше имя?" id="name-input" />
+    <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
+    <hr>
+    <input type="text" id="validation-input" data-length="6" placeholder="Введи 6 символов"/>
+    <hr>
+    <input id="font-size-control" type="range" />
+    <br />
+    <span id="text">Абракадабра!</span>
+    <hr>
+  </div>
     <script src="./js/task-01.js" type="module"></script>
     <script src="./js/task-02.js" type="module"></script>
     <script src="./js/task-03.js" type="module"></script>

@@ -2,7 +2,7 @@
     display: flex;
     margin: 0;
     padding: 0;
-    height: 220px;
+    height: 150px;
     justify-content: center;
 }
 
@@ -12,13 +12,18 @@
     align-items: center;
     margin: 7px;
     position: relative;
-    width: 25vw;
+    width: 150px;
     height: auto;
+}
+
+#gallery .gallery-list-item:first-child{
+    margin-left: 0;
 }
 
 #gallery .gallery-list-item:last-child{
     margin-right: 0;
 }
+
 
 #gallery .gallery-list-item-image{
     display: flex;
@@ -34,6 +39,6 @@
     position: absolute;
     z-index: 1;
     font-size: 2em;
-    width: 30vw;
+    width: 150%;
     height: auto;
 }
