@@ -13,6 +13,43 @@ body{
 }
 
 .container{
-    max-width: 1280px;
     margin: 0 auto;
+}
+
+.task-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 25px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: unset;
+}
+
+li{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 480px){
+    .container{
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .container{
+        width: 1280px;
+    }
 }

@@ -1,7 +1,42 @@
 #categories{
     display: flex;
+    flex-direction: column;
     list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
 }
-#categories li:not(:last-child){
-    margin-right: 25px;
+
+.item{
+    margin: 0 0 10px 0;
+}
+
+.item:last-child{
+    margin: 0;
+}
+
+.item li{
+    padding-left: 15px;
+}
+
+.item h2{
+    margin: 0;
+}
+
+#console{
+    padding: 4px 25px;
+    background-color: #cccccc;
+}
+
+pre{
+    white-space: unset;
+}
+
+@media screen and (min-width: 768px){
+    #categories{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .item{
+        margin: 0 25px 0 0;
+    }
 }

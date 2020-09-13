@@ -1,8 +1,8 @@
 #gallery{
     display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
-    height: 150px;
     justify-content: center;
 }
 
@@ -13,17 +13,8 @@
     margin: 7px;
     position: relative;
     width: 150px;
-    height: auto;
+    height: 100px;
 }
-
-#gallery .gallery-list-item:first-child{
-    margin-left: 0;
-}
-
-#gallery .gallery-list-item:last-child{
-    margin-right: 0;
-}
-
 
 #gallery .gallery-list-item-image{
     display: flex;
@@ -41,4 +32,18 @@
     font-size: 2em;
     width: 150%;
     height: auto;
+}
+
+@media screen and (min-width: 768px){
+    #gallery{
+        flex-direction: row;
+    }
+
+    #gallery .gallery-list-item:first-child{
+        margin-left: 0;
+    }
+    
+    #gallery .gallery-list-item:last-child{
+        margin-right: 0;
+    }
 }

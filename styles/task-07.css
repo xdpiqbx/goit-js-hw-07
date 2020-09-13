@@ -1,3 +1,6 @@
 #text{
+    display: flex;
+    align-items: center;
     font-size: 2em;
+    height: 90px;
 }
