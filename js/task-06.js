@@ -28,7 +28,11 @@ const input = document.querySelector("#validation-input")
 const validation = (e) => {
     input.classList.remove("invalid")
     input.classList.remove("valid")
-    
+
+    if (e.target.value.length == 0){
+      return;
+    }  
+
     if (input.getAttribute("data-length") == e.target.value.length){
         input.classList.add("valid")
     }else{
