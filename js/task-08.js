@@ -37,13 +37,8 @@ let size = defauSize
 const createBoxes = (amount) => {
     let allRects = "";
     for(let i = 0; i < amount; i += 1){
-        const div = document.createElement("div")
-        div.style.width = `${size}px`
-        div.style.height = `${size}px`
-        div.style.margin = "4px"
-        div.style.backgroundColor = randomColor()
+        allRects += `<div style="width: ${size}px; height: ${size}px; margin: 4px; background-color: ${randomColor()};"></div>`
         size += 10
-        allRects += div.outerHTML;
     }
     divBoxes.insertAdjacentHTML("beforeend", allRects)
 }
