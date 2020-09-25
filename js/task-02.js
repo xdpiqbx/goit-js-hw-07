@@ -22,9 +22,7 @@ function makeList (array, selector){
     const ul = document.querySelector(selector);
     let allLi = "";
     array.forEach(arrTextElement => {
-        const li = document.createElement("li");
-        li.textContent = arrTextElement
-        allLi += li.outerHTML
+        allLi += `<li>${arrTextElement}</li>`;
     })
     ul.insertAdjacentHTML("beforeend", allLi);
 }
