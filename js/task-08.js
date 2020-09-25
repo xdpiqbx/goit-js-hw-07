@@ -66,7 +66,6 @@ const destroyBoxes = () => {
     size = defauSize
 }
 
-//randomColor()
 render.addEventListener("click", renderFunction)
 destroy.addEventListener("click", destroyBoxes)
 
