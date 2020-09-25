@@ -35,15 +35,17 @@ const defauSize = 30
 let size = defauSize
 
 const createBoxes = (amount) => {
+    let allRects = "";
     for(let i = 0; i < amount; i += 1){
         const div = document.createElement("div")
         div.style.width = `${size}px`
         div.style.height = `${size}px`
         div.style.margin = "4px"
         div.style.backgroundColor = randomColor()
-        divBoxes.insertAdjacentElement("beforeend", div)
         size += 10
+        allRects += div.outerHTML;
     }
+    divBoxes.insertAdjacentHTML("beforeend", allRects)
 }
 
 const randomColor = () => {
@@ -69,7 +71,7 @@ const destroyBoxes = () => {
     size = defauSize
 }
 
-randomColor()
+//randomColor()
 render.addEventListener("click", renderFunction)
 destroy.addEventListener("click", destroyBoxes)
 

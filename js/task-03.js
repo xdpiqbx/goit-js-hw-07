@@ -29,20 +29,14 @@ const images = [
 
 function makeGallery (array, selector){
     const ul = document.querySelector(selector);
-
+    let allLi = ""
     array.forEach(arrObj => {
-        const li = document.createElement("li")
-        const img = document.createElement("img")
-
-        li.classList.add("gallery-list-item")
-
-        img.setAttribute("src", arrObj.url)
-        img.setAttribute("alt", arrObj.alt)
-        img.classList.add("gallery-list-item-image")
-
-        li.insertAdjacentElement('beforeend', img);
-        ul.insertAdjacentElement('beforeend', li);
+      allLi += `
+          <li class="gallery-list-item">
+            <img src="${arrObj.url}" alt="${arrObj.alt}" class="gallery-list-item-image">
+          </li>`
     });
+    ul.insertAdjacentHTML("beforeend", allLi);
 }
 
 makeGallery(images, '#gallery')

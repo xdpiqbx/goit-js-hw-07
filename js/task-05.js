@@ -13,9 +13,10 @@ const refSpan = document.querySelector("#name-output")
 const placeholder = refSpan.textContent;
 
 const nameRes = (e)=> {
-    refSpan.textContent = e.target.value;
-    if(refSpan.textContent.length == 0){
+    if(e.target.value.length === 0){
         refSpan.textContent = placeholder
+    }else{
+        refSpan.textContent = e.target.value;
     }
 }
 

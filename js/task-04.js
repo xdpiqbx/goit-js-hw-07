@@ -18,16 +18,15 @@
   const buttonInrement = refDivCounter.querySelector("[data-action=increment]")
 
   const spanValue = refDivCounter.querySelector("#value")
+  let counterValue = parseInt(spanValue.textContent);
   
   function increment(){
-    let temp = parseInt(spanValue.textContent);
-    temp += 1;
+    counterValue += 1;
     spanValue.textContent = temp;
   }
   
   function decrement(){
-    let temp = parseInt(spanValue.textContent);
-    temp -= 1;
+    counterValue -= 1;
     spanValue.textContent = temp;
   }
 

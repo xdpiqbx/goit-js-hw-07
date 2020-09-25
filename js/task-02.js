@@ -20,11 +20,13 @@ const ingredients = [
 
 function makeList (array, selector){
     const ul = document.querySelector(selector);
+    let allLi = "";
     array.forEach(arrTextElement => {
         const li = document.createElement("li");
         li.textContent = arrTextElement
-        ul.appendChild(li);
+        allLi += li.outerHTML
     })
+    ul.insertAdjacentHTML("beforeend", allLi);
 }
 
 makeList(ingredients, '#ingredients')
