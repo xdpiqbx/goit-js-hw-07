@@ -22,12 +22,12 @@
   
   function increment(){
     counterValue += 1;
-    spanValue.textContent = temp;
+    spanValue.textContent = counterValue;
   }
   
   function decrement(){
     counterValue -= 1;
-    spanValue.textContent = temp;
+    spanValue.textContent = counterValue;
   }
 
   buttonDecrement.addEventListener("click", decrement)
